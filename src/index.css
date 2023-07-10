@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-black min-h-screen font-dm;
+  }
+}
+
+@layer components {
+  .dev-container {
+    @apply w-11/12 mx-auto;
+  }
+}
+
+.outer-circle {
+  box-shadow: 0 0 8px 0 #aaa;
+  position: relative;
+}
+
+.green-scanner {
+  position: absolute;
+  background: conic-gradient(transparent, rgb(125, 123, 123));
+  animation: scan 4s infinite linear;
+}
+
+@keyframes scan {
+  to {
+    transform: rotate(1turn);
+  }
+}
