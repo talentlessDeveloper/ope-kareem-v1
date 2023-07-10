@@ -9,14 +9,14 @@ type MovieIntroCountdownProps = {
 const MovieIntroCountdown = ({
   setShowCountdown,
 }: MovieIntroCountdownProps) => {
-  const [count, setCount] = useState(4);
+  const [count, setCount] = useState(5);
 
   useEffect(() => {
     const countdown = setInterval(() => {
       setCount((prevCount) => prevCount - 1);
     }, 1000);
 
-    if (count < 0) {
+    if (count <= 0) {
       clearInterval(countdown);
       setShowCountdown(false);
     }
