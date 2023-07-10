@@ -50,7 +50,9 @@ const Header = () => {
             </div>
           </ul>
           <div className="flex justify-between w-full px-6 md:hidden ">
-            <HeaderLogo rangeA={[0, 0]} rangeB={[-38, 0]} />
+            <Link to="/">
+              <HeaderLogo rangeA={[0, 0]} rangeB={[-38, 0]} />
+            </Link>
 
             <MenuButton openMenu={openMenu} setOpenMenu={setOpenMenu} />
           </div>
