@@ -1,6 +1,12 @@
 import { motion } from 'framer-motion';
 
-const HeaderMenu = ({ open }: { open: boolean }) => {
+const HeaderMenu = ({
+  open,
+  setOpen,
+}: {
+  open: boolean;
+  setOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}) => {
   return (
     <motion.ul
       className="fixed inset-0 bg-slate-300 -z-[1] pt-44 text-center space-y-4 text-2xl font-bold font-serif"
@@ -8,31 +14,31 @@ const HeaderMenu = ({ open }: { open: boolean }) => {
       animate={!open ? { y: '-100%' } : { y: 0 }}
       transition={{ duration: 1, ease: 'easeOut' }}
     >
-      <li>
+      <li onClick={() => setOpen(false)}>
         <a
-          href=""
+          href="#about"
           className="hover:text-slate-200 transition-colors duration-500"
         >
           About
         </a>
       </li>
-      <li>
+      <li onClick={() => setOpen(false)}>
         <a
-          href=""
+          href="#projects"
           className="hover:text-slate-200 transition-colors duration-500"
         >
           Projects
         </a>
       </li>
-      <li>
+      <li onClick={() => setOpen(false)}>
         <a
-          href=""
+          href="#contact"
           className="hover:text-slate-200 transition-colors duration-500"
         >
           Contact
         </a>
       </li>
-      <li>
+      <li onClick={() => setOpen(false)}>
         <a
           href=""
           className="hover:text-slate-200 transition-colors duration-500"
