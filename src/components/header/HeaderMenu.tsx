@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import CV from '../../assets/NewCv.pdf';
 
 const HeaderMenu = ({
   open,
@@ -40,7 +41,8 @@ const HeaderMenu = ({
       </li>
       <li onClick={() => setOpen(false)}>
         <a
-          href=""
+          href={CV}
+          download
           className="hover:text-slate-200 transition-colors duration-500"
         >
           Resume

@@ -8,6 +8,7 @@ import HeaderMenu from './HeaderMenu';
 import { useState } from 'react';
 import MenuButton from './MenuButton';
 import { Link, Outlet } from 'react-router-dom';
+import CV from '../../assets/NewCv.pdf';
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -45,7 +46,9 @@ const Header = () => {
                 <a href="#contact">Contact</a>
               </motion.li>
               <motion.li variants={headerTextSlideUp}>
-                <button>Resume</button>
+                <a href={CV} download>
+                  Resume
+                </a>
               </motion.li>
             </div>
           </ul>
