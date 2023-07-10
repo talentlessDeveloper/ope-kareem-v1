@@ -8,7 +8,7 @@ import HeaderMenu from './HeaderMenu';
 import { useState } from 'react';
 import MenuButton from './MenuButton';
 import { Link, Outlet } from 'react-router-dom';
-import CV from '../../assets/NewCv.pdf';
+import CV from '../../assets/NewCv2.pdf';
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);

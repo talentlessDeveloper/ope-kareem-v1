@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import CV from '../../assets/NewCv.pdf';
+import CV from '../../assets/NewCv2.pdf';
 
 const HeaderMenu = ({
   open,
