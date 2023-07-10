@@ -10,7 +10,7 @@ import { useAnimateScreen } from '../hooks/useAnimate';
 import Me from '../assets/img-repo-2-1.webp';
 
 const About = () => {
-  const { ref, control } = useAnimateScreen({ once: true, amount: 0.75 });
+  const { ref, control } = useAnimateScreen({ once: true, amount: 0.25 });
   return (
     <section className="relative" id="about">
       <motion.div
