@@ -29,7 +29,7 @@ const Header = () => {
               </motion.li>
               <motion.li variants={headerTextSlideUp}>
                 <a href="#projects" className="font-dm">
-                  Project
+                  Projects
                 </a>
               </motion.li>
             </div>
@@ -57,7 +57,7 @@ const Header = () => {
             <MenuButton openMenu={openMenu} setOpenMenu={setOpenMenu} />
           </div>
         </nav>
-        <HeaderMenu open={openMenu} />
+        <HeaderMenu open={openMenu} setOpen={setOpenMenu} />
       </motion.header>
       <Outlet />
     </>
