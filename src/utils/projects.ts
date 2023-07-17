@@ -3,8 +3,39 @@ import vueCart from '../assets/vue-cart-1.webp';
 import hackathonImage from '../assets/hackatjon-screenshot.webp';
 import tintsAndShades from '../assets/tints-and-shades.webp';
 import gitImage from '../assets/portfol-img-1.webp';
+import vividImg from '../assets/vivid-verse.webp';
 
 export const projectData = [
+  {
+    title: 'Vivid Verse',
+    techLists: [
+      'Next.js',
+      'Firebase',
+      'React',
+      'Tailwind CSS',
+      'TypeScript',
+      'Cypress',
+    ],
+    intro:
+      'The Next.js Blog App with Firebase is a powerful web application that enables users to create, read, update, and delete blog posts. Built with Next.js, Firebase, React, Tailwind CSS, TypeScript, and Cypress, it provides seamless functionality for managing blog content and user interactions, while ensuring code quality and robust testing.',
+    text: 'With Firebase as the database, the app allows users to perform CRUD operations on blog posts, including liking, commenting, and updating profile images. TypeScript enhances the development process by adding static typing, while Cypress ensures comprehensive end-to-end testing.',
+    img: vividImg,
+    link: 'https://github.com/talentlessDeveloper/vivid-verse',
+    live: 'https://vivid-verse.vercel.app/',
+    reverse: false,
+    id: 2,
+    path: 'vivid-verse',
+    features: [
+      'Blog Post CRUD Operations',
+      'User Authentication and Authorization',
+      'Real-time Database Updates',
+      'Like and Comment Functionality',
+      'Profile Image Update',
+      'Responsive Design',
+      'End-to-End Testing with Cypress',
+      'Type-safe Development with TypeScript',
+    ],
+  },
   {
     title: 'Github Repositories',
     techLists: ['React', 'Framer-motion', 'Tailwindcss', 'React-Query'],
