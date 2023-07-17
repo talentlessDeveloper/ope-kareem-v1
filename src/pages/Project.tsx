@@ -37,7 +37,7 @@ const Project = forwardRef((_props, _ref) => {
   return (
     <section className="text-slate-100">
       <motion.div
-        className="dev-container py-36"
+        className="dev-container py-20 lg:py-36"
         initial="hidden"
         animate="visible"
         variants={homeVariant}
