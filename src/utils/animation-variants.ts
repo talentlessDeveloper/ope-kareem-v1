@@ -68,10 +68,10 @@ export const textVariant = {
 
 export const clipPathVariant = {
   hidden: {
-    scaleX: 1,
+    scale: 1,
   },
   visible: {
-    scaleX: 0,
+    scale: 0,
     transition: {
       ease: easeInOut,
       duration: 0.85,
@@ -81,41 +81,6 @@ export const clipPathVariant = {
     scaleX: 0,
   },
 };
-
-// export const clipPathVariant = {
-// hidden: {
-//   clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
-// },
-// visible: {
-//   clipPath: 'polygon(0 0, 0 0, 0 100%, 0% 100%)',
-//   transition: {
-//     ease: easeInOut,
-//     duration: 0.85,
-//   },
-// },
-// exit: {
-//   clipPath: 'polygon(0 0, 0 0, 0 100%, 0% 100%)',
-
-//   transition: { duration: 0.85 },
-// },
-
-// hidden: {
-//   clipPath:
-//     'polygon(0 0,  0 0 , 0 25% ,   0 25%,   0 25%,   0 25%,  0 50% ,   0 50%,    0 50% ,   0 50%,   0 75% ,    0 75%,    0 75%,    0 75%,    0 100%,    0 100%    )',
-// },
-// visible: {
-//   clipPath:
-//     'polygon(0 0, 100 0 , 100 25% ,  0 25%,0 25%,100 25%,100 50% ,0 50%,0 50%,100 50%, 100 75% ,0 75%,0 75%,100 75%,100 100%,0 100% )',
-//   transition: {
-//     ease: 'easeInOut',
-//     duration: 0.5,
-//   },
-// },
-// exit: {
-//   clipPath:
-//     'polygon(0 0, 0 0 , 0 25% ,   0 25%,   0 25%,   0 25%,  0 50% ,   0 50%,    0 50% ,   0 50%,   0 75% ,    0 75%,    0 75%,    0 75%,    0 100%,  0 100%  )',
-// },
-//};
 
 export const imgVariant = {
   hidden: {
