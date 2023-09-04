@@ -22,12 +22,12 @@ const Project = () => {
         animate={control}
         ref={ref}
       >
-        <motion.div
+        {/* <motion.div
           variants={clipPathVariant}
           className="origin-left absolute z-10  inset-0 bg-slate-300 flex justify-center  pt-64 lg:pt-80 motion-reduce:transition-none motion-reduce:transform-none"
         >
           <p className="text-black text-3xl lg:text-5xl -mt-20">Projects</p>
-        </motion.div>
+        </motion.div> */}
         {projectData.map((project) => {
           const { reverse, title, path } = project;
           return (

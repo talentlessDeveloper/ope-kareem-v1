@@ -20,15 +20,15 @@ const About = () => {
         ref={ref}
         className="dev-container mt-40 pb-20 space-y-5 text-slate-100"
       >
-        <motion.div
+        {/* <motion.div
           variants={clipPathVariant}
           className="origin-left absolute z-10  inset-0 bg-slate-300 flex justify-center items-center"
         >
           <p className="text-black text-2xl lg:text-4xl">About Me</p>
-        </motion.div>
+        </motion.div> */}
         <div className="md:flex md:justify-center  md:gap-x-10">
           <div className="mb-6 md:mb-0   md:justify-end">
-            <div className="overflow-y-hidden">
+            <div className="overflow-y-hidden rounded-full">
               <motion.img
                 src={Me}
                 alt="Ope Kareem At the Train Station"
