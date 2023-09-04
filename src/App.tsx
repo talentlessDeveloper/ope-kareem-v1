@@ -4,7 +4,6 @@ import { Route, Routes, useLocation } from 'react-router-dom';
 import MovieIntroCountdown from './components/MovieIntro';
 import TransitionsHome from './pages/Home';
 import TransitionsProject from './pages/Project';
-import PdfViewer from './components/PdfViewer';
 
 function App() {
   const [showCountdown, setShowCountdown] = useState(true);

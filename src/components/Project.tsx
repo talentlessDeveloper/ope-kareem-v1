@@ -1,12 +1,8 @@
 import { motion } from 'framer-motion';
-import { projectData } from '../utils/projects';
-import {
-  clipPathVariant,
-  homeVariant,
-  textVariant,
-} from '../utils/animation-variants';
-import { useAnimateScreen } from '../hooks/useAnimate';
 import { Link } from 'react-router-dom';
+import { useAnimateScreen } from '../hooks/useAnimate';
+import { homeVariant, textVariant } from '../utils/animation-variants';
+import { projectData } from '../utils/projects';
 
 // const h3Variant = {
 

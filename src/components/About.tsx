@@ -1,11 +1,10 @@
 import { motion } from 'framer-motion';
-import {
-  clipPathVariant,
-  homeVariant,
-  textVariant,
-  imgVariant,
-} from '../utils/animation-variants';
 import { useAnimateScreen } from '../hooks/useAnimate';
+import {
+  homeVariant,
+  imgVariant,
+  textVariant,
+} from '../utils/animation-variants';
 
 import Me from '../assets/img-repo-2-1.webp';
 
