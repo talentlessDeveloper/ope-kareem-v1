@@ -1,17 +1,27 @@
 import { motion } from 'framer-motion';
+import { useState } from 'react';
+import { Link, Outlet } from 'react-router-dom';
 import {
-  headerVariant,
   headerTextSlideUp,
+  headerVariant,
 } from '../../utils/animation-variants';
+import PdfViewer from '../PdfViewer';
 import HeaderLogo from './HeaderLogo';
 import HeaderMenu from './HeaderMenu';
-import { useState } from 'react';
 import MenuButton from './MenuButton';
-import { Link, Outlet } from 'react-router-dom';
-import CV from '../../assets/NewCv2.pdf';
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
+  const [viewResume, setViewResume] = useState(false);
+
+  const handleResume = () => {
+    setViewResume(true);
+    console.log(viewResume);
+  };
+
+  const closeResume = () => {
+    setViewResume(false);
+  };
   return (
     <>
       <motion.header
@@ -41,14 +51,18 @@ const Header = () => {
                 </Link>
               </motion.li>
             </div>
-            <div className="flex gap-x-3 overflow-y-hidden">
+            <div className="flex gap-x-3 items-center overflow-y-hidden">
               <motion.li variants={headerTextSlideUp}>
                 <a href="#contact">Contact</a>
               </motion.li>
               <motion.li variants={headerTextSlideUp}>
-                <a href={CV} download>
+                <button
+                  onClick={handleResume}
+                  className="bg-emerald-500 text-slate-100 hover:bg-emerald-800 transition-all duration-300  px-3 py-1 rounded"
+                >
                   Resume
-                </a>
+                </button>
+                {/* <Link to="/resume">Resume</Link> */}
               </motion.li>
             </div>
           </ul>
@@ -62,6 +76,7 @@ const Header = () => {
         </nav>
         <HeaderMenu open={openMenu} setOpen={setOpenMenu} />
       </motion.header>
+      {viewResume ? <PdfViewer closeResume={closeResume} /> : null}
       <Outlet />
     </>
   );
