@@ -37,7 +37,7 @@ const About = () => {
             </div>
           </div>
           <div className="">
-            <p className="overflow-hidden max-w-[480px]">
+            {/* <p className="overflow-hidden max-w-[480px]">
               <motion.span
                 variants={textVariant}
                 className="inline-block first-letter:text-slate-50 first-letter:text-4xl"
@@ -47,7 +47,7 @@ const About = () => {
                 that meticulousness into creating accessible and user friendly
                 websites.
               </motion.span>
-            </p>
+            </p> */}
 
             <p className="overflow-y-hidden max-w-[480px] mt-3">
               <motion.span

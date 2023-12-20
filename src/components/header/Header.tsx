@@ -5,23 +5,25 @@ import {
   headerTextSlideUp,
   headerVariant,
 } from '../../utils/animation-variants';
-import PdfViewer from '../PdfViewer';
+// import PdfViewer from '../PdfViewer';
 import HeaderLogo from './HeaderLogo';
 import HeaderMenu from './HeaderMenu';
 import MenuButton from './MenuButton';
 
+import pdf from '../../assets/NewCv2.pdf';
+
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
-  const [viewResume, setViewResume] = useState(false);
+  // const [viewResume, setViewResume] = useState(false);
 
-  const handleResume = () => {
-    setViewResume(true);
-    console.log(viewResume);
-  };
+  // const handleResume = () => {
+  //   setViewResume(true);
+  //   console.log(viewResume);
+  // };
 
-  const closeResume = () => {
-    setViewResume(false);
-  };
+  // const closeResume = () => {
+  //   setViewResume(false);
+  // };
   return (
     <>
       <motion.header
@@ -30,12 +32,17 @@ const Header = () => {
         variants={headerVariant}
         className="fixed top-5 left-0 right-0 overflow-hidden z-10 "
       >
-        <nav className="bg-slate-200 text-black w-11/12 mx-auto max-w-lg  rounded-full h-[50px] flex items-center ">
+        <nav className="bg-slate-200 text-black w-11/12 mx-auto max-w-2xl rounded-full h-[50px] flex items-center ">
           <ul className="hidden md:flex justify-between items-center   px-4 text-base font-serif w-full">
             <div className="flex gap-x-3 overflow-y-hidden">
               <motion.li variants={headerTextSlideUp}>
                 <a href="#about" className="font-dm">
                   About
+                </a>
+              </motion.li>
+              <motion.li variants={headerTextSlideUp}>
+                <a href="#experience" className="font-dm">
+                  Experience
                 </a>
               </motion.li>
               <motion.li variants={headerTextSlideUp}>
@@ -56,13 +63,21 @@ const Header = () => {
                 <a href="#contact">Contact</a>
               </motion.li>
               <motion.li variants={headerTextSlideUp}>
-                <button
+                {/* <button
                   onClick={handleResume}
                   className="bg-emerald-500 text-slate-100 hover:bg-emerald-800 transition-all duration-300  px-3 py-1 rounded"
                 >
                   Resume
-                </button>
+                </button> */}
                 {/* <Link to="/resume">Resume</Link> */}
+                <a
+                  href={pdf}
+                  download
+                  target="_blank"
+                  className="w-fit  text-black font-semibold transition-colors duration-300 hover:text-orange-500"
+                >
+                  Resume
+                </a>
               </motion.li>
             </div>
           </ul>
@@ -76,7 +91,7 @@ const Header = () => {
         </nav>
         <HeaderMenu open={openMenu} setOpen={setOpenMenu} />
       </motion.header>
-      {viewResume ? <PdfViewer closeResume={closeResume} /> : null}
+      {/* {viewResume ? <PdfViewer closeResume={closeResume} /> : null} */}
       <Outlet />
     </>
   );

@@ -18,7 +18,7 @@ const HeaderMenu = ({
       <li onClick={() => setOpen(false)}>
         <a
           href="#about"
-          className="hover:text-slate-200 transition-colors duration-500"
+          className="hover:text-orange-500 transition-colors duration-500"
         >
           About
         </a>
@@ -26,7 +26,7 @@ const HeaderMenu = ({
       <li onClick={() => setOpen(false)}>
         <a
           href="#projects"
-          className="hover:text-slate-200 transition-colors duration-500"
+          className="hover:text-orange-500 transition-colors duration-500"
         >
           Projects
         </a>
@@ -34,7 +34,7 @@ const HeaderMenu = ({
       <li onClick={() => setOpen(false)}>
         <a
           href="#contact"
-          className="hover:text-slate-200 transition-colors duration-500"
+          className="hover:text-orange-500 transition-colors duration-500"
         >
           Contact
         </a>
@@ -43,7 +43,7 @@ const HeaderMenu = ({
         <a
           href={CV}
           download
-          className="hover:text-slate-200 transition-colors duration-500"
+          className="hover:text-orange-500 transition-colors duration-500"
         >
           Resume
         </a>

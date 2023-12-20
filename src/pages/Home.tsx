@@ -7,6 +7,7 @@ import Project from '../components/Project';
 import Transitions from '../components/Transitions';
 import Header from '../components/header/Header';
 import Footer from '../components/Footer';
+import Experience from '../components/Experience';
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <Header />
       <Hero />
       <About />
+      <Experience />
       <Project />
       <Footer />
     </motion.div>
